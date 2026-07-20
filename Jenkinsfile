@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'python3 -m unittest discover -v'
+                sh 'python3 -m unittest test-app.py -v'
             }
         }
         stage('Package') {
